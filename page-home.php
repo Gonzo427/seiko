@@ -37,18 +37,22 @@ get_header(); ?>
 
 			<div class="products-container">
 				<div class="quad-one">
-					<div class="grid-2-2 bottom-content no-mobile static static-mobile visible flash"><img alt="" src="http://www.getolympus.com/media/wysiwyg/home/homepage-large01_4.jpg" class="img-flash">
-					<div class="panel panel-flash"></div><div class="content-container content-flash">
-					<div class="content-inner">
-					<h2>CONGRATS OM-D E-M1 MARK II</h2>
-					<div class="rule">&nbsp;</div>
-					<p>Winner of DP Review's Gold Award and named Imaging Resource's Camera of the Year (Best Overall &amp; Best Professional Mirrorless).</p>
-					<a class="view-more" href="http://www.getolympus.com/us/en/e-m1-mark-ii.html"> <button class="button btn-medium button-secondary"><span><span>SEE WHAT MAKES IT A WINNER</span></span></button> </a></div>
-					</div>
+					<div class="grid-2-2 bottom-content no-mobile static static-mobile visible ">
+						<img alt="" src="http://www.getolympus.com/media/wysiwyg/home/homepage-large01_4.jpg" class="img-flash">
+						<div class="panel"></div>
+						<div class="content-container">
+							<div class="content-inner">
+								<h2>CONGRATS OM-D E-M1 MARK II</h2>
+								<div class="rule">&nbsp;</div>
+								<p>Winner of DP Review's Gold Award and named Imaging Resource's Camera of the Year (Best Overall &amp; Best Professional Mirrorless).</p>
+								<a class="view-more" href="http://www.getolympus.com/us/en/e-m1-mark-ii.html"> 
+									<button class="button btn-medium button-secondary"><span><span>SEE WHAT MAKES IT A WINNER</span></span></button>
+								</a>
+							</div>
+						</div>
 					</div>
 
-
-					<div class="grid-1-2 left-content mobile">
+					<div class="grid-1-2 left-content mobile visible ">
 					          <img data-src="http://www.getolympus.com/media/wysiwyg/home/homepage-medium03_2.jpg" alt="" src="http://www.getolympus.com/media/wysiwyg/home/homepage-medium03_2.jpg" class="lazy-loaded">
 					          <img class="mobile" data-src="http://www.getolympus.com/media/wysiwyg/home/shophome-small03-mobile.jpg" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
 					          <div class="panel"></div>
@@ -61,7 +65,7 @@ get_header(); ?>
 					                    	<button class="button btn-medium button-secondary"><span><span>BUNDLE &amp; SAVE</span></span></button>
 					                    </a>
 					               </div>
-					         </div>
+					         	</div>
 					</div> 
 				</div>
 				<div class="quad-two">
