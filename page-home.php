@@ -12,11 +12,23 @@
 
 get_header(); ?>
  <div class="home-container">
-      <div class="row">
+      <div class="homepage-banner">
       	<div class="video-container">
-		<iframe src="http://player.vimeo.com/video/183341493?background=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+			<iframe src="http://player.vimeo.com/video/183341493?background=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 		</div>
+		<div class="banner-content-container" data-scroll-speed="5"> 
+			<h1>TIME TO CHANGE</h1> 
+			<div class="rule"></div> 
+			<div> 
+			<p>With incredible speed, superior resolution, and weatherproof design, our newest OM-D camera and M.Zuiko PRO lenses are on a whole new level.</p>
+			</div> 
+			<div> 
+			<a href="http://www.getolympus.com/us/en/e-m1-mark-ii.html"><button class="button btn-ghost"><span><span>SEE THE OM-D E-M1 MARK II</span></span></button></a> 
+			</div> 
+		</div>
+	</div>
 	<div id="primary" class="content-area">
+		<div cass="row>
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -206,7 +218,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-</div>
+</div><!--/row-->
 </div>
 
 <?php
