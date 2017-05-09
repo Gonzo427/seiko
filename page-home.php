@@ -28,7 +28,7 @@ get_header(); ?>
 		</div>
 	</div>
 	<div id="primary" class="content-area">
-		<div cass="row>
+		<div cass="row">
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -81,7 +81,7 @@ get_header(); ?>
 					</div> 
 				</div>
 				<div class="quad-two">
-					<div class="grid-1-1 no-overlay mobile static visible"><img alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/HomepageBlock_582x582_TITU-c.jpg" src="http://www.getolympus.com/media/wysiwyg/home/HomepageBlock_582x582_TITU-c.jpg" class="lazy-loaded"><img class="mobile" alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/HomepageBlock_616x412_TITU_MOBILE-c.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+				<!--	<div class="grid-1-1 no-overlay mobile static visible"><img alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/HomepageBlock_582x582_TITU-c.jpg" src="http://www.getolympus.com/media/wysiwyg/home/HomepageBlock_582x582_TITU-c.jpg" class="lazy-loaded"><img class="mobile" alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/HomepageBlock_616x412_TITU_MOBILE-c.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
 					<div class="content-container"><div class="overlay"></div>
 					<div class="content-inner">
 					<h3 class="reverse">Trade Up to Our Best Gear &amp; Get Up to an $800 Bonus</h3>
@@ -95,7 +95,7 @@ get_header(); ?>
 					<h3 class="reverse">Olympus Global Open Photo Contest 2016-2017</h3>
 					<a class="button btn-small btn-ghost" href="https://gopc.olympus-global.com/2016/results" target="blank"><span>VIEW WINNERS</span></a></div>
 					</div>
-					</div>
+					</div>-->
 
 
 
@@ -123,7 +123,7 @@ get_header(); ?>
 					<a class="view-more" href="http://www.getolympus.com/us/en/brunch"> <button class="button btn-medium button-secondary"><span><span>LEARN MORE</span></span></button> </a></div>
 					</div>
 					</div>
-					<div class="grid-1-2 right-content mobile visible"><img alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/homepage-medium01_7.jpg" src="http://www.getolympus.com/media/wysiwyg/home/homepage-medium01_7.jpg" class="lazy-loaded"><img class="mobile" alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/homepage-medium01-mobile_7.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+					<!--<div class="grid-1-2 right-content mobile visible"><img alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/homepage-medium01_7.jpg" src="http://www.getolympus.com/media/wysiwyg/home/homepage-medium01_7.jpg" class="lazy-loaded"><img class="mobile" alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/homepage-medium01-mobile_7.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
 					<div class="panel"></div><div class="content-container">
 					<div class="content-inner">
 					<h3>#MACROMAY17 CONTEST</h3>
@@ -132,13 +132,13 @@ get_header(); ?>
 					<p class="view-more">Your image could be our Photo of the Month. Upload photos with #MacroMay17 to win up to $150 to GetOlympus.com.</p>
 					<a class="view-more" href="http://www.getolympus.com/us/en/gallery"> <button class="button btn-medium button-secondary"><span><span>UPLOAD PHOTOS &amp; GET POINTS</span></span></button> </a></div>
 					</div>
-					</div>
+					</div>-->
 				</div><!--quad-three-->
 
 
 			
 				<div class="quad-one">
-					<div class="grid-1-2 email-content visible">
+					<!--<div class="grid-1-2 email-content visible">
 					<div class="content-container">
 					<div class="content-inner">
 					<h3>Join Our List &amp; Earn 100 Reward Points!</h3>
@@ -146,7 +146,7 @@ get_header(); ?>
 
 					</div>
 					</div>
-					</div>
+					</div>-->
 
 					<div class="grid-2-2 bottom-content no-mobile static static-mobile visible"><img alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/homepage-large03_5.jpg" src="http://www.getolympus.com/media/wysiwyg/home/homepage-large03_5.jpg" class="lazy-loaded">
 					<div class="panel"></div><div class="content-container">
@@ -184,7 +184,7 @@ get_header(); ?>
 					     
 				</div><!--/quad-three-->
 
-				<div class="quad-two">
+				<!--<div class="quad-two">
 
 						<div class="grid-1-1 no-overlay mobile static visible"><img alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/homepage-quiz.jpg" src="http://www.getolympus.com/media/wysiwyg/home/homepage-quiz.jpg" class="lazy-loaded"><img class="mobile" alt="" data-src="http://www.getolympus.com/media/wysiwyg/home/homepage-quiz-mobile.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
 						<div class="content-container"><div class="overlay"></div>
@@ -211,7 +211,7 @@ get_header(); ?>
 						<a class="view-more" href="http://www.getolympus.com/us/en/wildlife"> <button class="button btn-medium button-secondary"><span><span>GET THE TIPS</span></span></button> </a></div>
 						</div>
 						</div>
-				</div><!--/quad-two-->
+				</div>-->
 
 
 			</div><!--.products-container-->

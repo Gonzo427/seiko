@@ -126,8 +126,8 @@
 #site-navigation {
   float: left;
   display: inline-block;
-  position: fixed;
-  z-index: 3; }
+  position: absolute;
+  z-index: 0; }
 
 .main-navigation ul ul {
   top: 2.5em;
