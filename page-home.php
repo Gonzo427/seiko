@@ -15,6 +15,8 @@ get_header(); ?>
       <div class="homepage-banner">
       	<div class="video-container">
 			<iframe src="http://player.vimeo.com/video/183341493?background=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+			
+			
 		</div>
 		<div class="banner-content-container" data-scroll-speed="5"> 
 			<h1>THE CHOICE IS YOURS</h1> 

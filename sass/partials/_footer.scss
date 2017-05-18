@@ -16,12 +16,13 @@
 		    max-width: 1600px;
 		    margin: 0 auto;
 		}
-
-	    .footer-social-container {
-		    width: 50%;
-		    border-right: 1px #FFF solid;
-		    text-align: right;
+		.footer-social-container,.footer-subscribe{
+			padding: 0 2%;
+			width: 50%;
 		    float: left;
+		}
+	    .footer-social-container {
+		    border-right: 1px #FFF solid;
 		}
 		.footer-social {
 		    max-width: 800px;
@@ -31,9 +32,8 @@
 		    text-align: center;
 		}
 		.footer-subscribe {
-		    width: 50%;
-		    text-align: left;
-		    float: left;
+		    
+
 
 		    .half-ib{
 		    	max-width: 50%;
@@ -47,6 +47,27 @@
 		    padding: 2.9412% 4.902%;
 		    clear: both;
 		    text-align: justify;
+		    border-top: 1px solid white;
+
+		    #menu-footer-links{
+		    	    list-style: none;
+				    display: block;
+				    margin: 0 auto;
+				    padding: 0;
+				    text-align: center;
+
+				    li{
+				    	display: inline;
+
+				    	a{
+				    		padding: 0 2%;
+						    text-decoration: none;
+						    color: #777;
+						    text-transform: uppercase;
+				    	}
+				    }
+
+		    }
 		}
     }
 }

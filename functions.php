@@ -41,10 +41,12 @@ function seiko_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 500, 500 );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'seiko' ),
+		'menu-1' => esc_html__( 'Menu', 'seiko' ),
+		'menu-2' => esc_html__( 'Footer-menu', 'seiko' )
 	) );
 
 	/*
@@ -98,6 +100,43 @@ function seiko_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	 // First footer widget area, located in the footer. Empty by default.
+    register_sidebar( array(
+        'name' => __( 'First Footer Widget Area', 'seiko' ),
+        'id' => 'first-footer-widget-area',
+        'description' => __( 'The first footer widget area', 'seiko' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+    // Second Footer Widget Area, located in the footer. Empty by default.
+    register_sidebar( array(
+        'name' => __( 'Second Footer Widget Area', 'seiko' ),
+        'id' => 'second-footer-widget-area',
+        'description' => __( 'The second footer widget area', 'seiko' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+    // Third Footer Widget Area, located in the footer. Empty by default.
+    register_sidebar( array(
+        'name' => __( 'Third Footer Widget Area', 'seiko' ),
+        'id' => 'third-footer-widget-area',
+        'description' => __( 'The third footer widget area', 'seiko' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+   
+
+
 }
 add_action( 'widgets_init', 'seiko_widgets_init' );
 
@@ -118,6 +157,8 @@ function seiko_scripts() {
 	wp_enqueue_script( 'seiko-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'seiko-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'seiko-scrollReveal', get_template_directory_uri() . '/js/scrollReveal.min.js', array(), '3.3.4', true );
 
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '1', true );
 
@@ -176,5 +217,7 @@ function my_theme_wrapper_end() {
 }
 /*  Add WooCommerce excerpt */
 add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_single_excerpt', 5);
+
+
 
 

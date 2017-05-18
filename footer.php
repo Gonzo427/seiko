@@ -17,12 +17,18 @@
 		<div class="footer">
 			<div class="footer-top">
 				<div class="footer-social-container">
-                	<div class="footer-social">social media goes here</div>
+                	 <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('first-footer-widget-area') ) ?>
 				</div>
-				<div class="footer-subscribe"><div class="half-ib">subscribe button?</div></div>
+				<div class="footer-subscribe"><div class="half-ib">
+					 <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('second-footer-widget-area') ) ?>
+				</div></div>
+		
+       
 			</div>
 			<div class="footer-bottom">
-				<div class="footer-links-container">footer links?</div>
+				<div class="footer-links-container">
+					<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('third-footer-widget-area') ) ?>
+				</div>
 				<div class="site-info">
 					<a href="<?php //echo esc_url( __( 'https://wordpress.org/', 'seiko' ) ); ?>"><?php //printf( esc_html__( 'Proudly powered by %s', 'seiko' ), 'WordPress' ); ?></a>
 					<span class="sep">  </span>

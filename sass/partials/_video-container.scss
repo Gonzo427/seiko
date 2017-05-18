@@ -31,6 +31,10 @@
 	    text-shadow: 0 1px 1px #000;
 	    width: 100%;
 
+	    @media only screen and (max-width: 780px) {
+	    	bottom: 0;
+	    }
+
 	    h1{
 	    	margin-bottom: 0;
 		    line-height: 42px;
