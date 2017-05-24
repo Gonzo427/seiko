@@ -1,4 +1,6 @@
 /* main style sheet */
+/*blue*/
+/*hover button color*/
 .site-footer {
   background-color: #E7E7EA;
   padding: 0;
@@ -7,6 +9,13 @@
     clear: both;
     width: 100%;
     margin: 0 auto; }
+    .site-footer .footer .woocommerce.widget_shopping_cart .cart_list li {
+      color: #777; }
+    .site-footer .footer h3.widget-title {
+      text-transform: uppercase;
+      line-height: 1;
+      font-size: 1.125rem;
+      color: #777; }
     .site-footer .footer .footer-top {
       width: 100%;
       border-bottom: 1px #FFF solid; }
@@ -14,7 +23,7 @@
       max-width: 1600px;
       margin: 0 auto; }
     .site-footer .footer .footer-social-container, .site-footer .footer .footer-subscribe {
-      padding: 0 2%;
+      padding: 0 2% 3%;
       width: 50%;
       float: left; }
     .site-footer .footer .footer-social-container {
@@ -24,12 +33,17 @@
       padding: 0 11.5196%;
       display: inline-block;
       width: 100%;
-      text-align: center; }
-    .site-footer .footer .footer-subscribe .half-ib {
-      max-width: 50%;
-      display: inline-block;
-      width: 100%;
-      margin: 0; }
+      text-align: center;
+      padding: 0 2% 3%; }
+    .site-footer .footer .footer-subscribe {
+      padding: 0 2% 3%; }
+      .site-footer .footer .footer-subscribe .half-ib {
+        display: inline-block;
+        width: 100%;
+        margin: 0; }
+        .site-footer .footer .footer-subscribe .half-ib input[type="search"] {
+          padding: 5px;
+          text-transform: lowercase; }
     .site-footer .footer .footer-links-container {
       position: relative;
       padding: 2.9412% 4.902%;
@@ -49,12 +63,24 @@
             text-decoration: none;
             color: #777;
             text-transform: uppercase; }
+            .site-footer .footer .footer-links-container #menu-footer-links li a:hover {
+              color: #025490; }
+          .site-footer .footer .footer-links-container #menu-footer-links li i:hover {
+            color: #025490; }
 
 .home-container {
   max-width: 1600px; }
 
 .homepage-banner {
   position: relative; }
+  @media only screen and (max-width: 480px) {
+    .homepage-banner {
+      background: grey;
+      padding: 50px 0; }
+      .homepage-banner iframe {
+        display: none; }
+      .homepage-banner .banner-content-container {
+        bottom: -20px; } }
   .homepage-banner .video-container {
     position: relative;
     padding-bottom: 37.5%;
@@ -96,16 +122,12 @@
       pointer-events: none; }
 
 /*======== HOME PAGE  ===========*/
- /*.page-header-container {
-    max-width: 1600px;
-    margin: 0 auto;
-}*/
 #masthead {
   padding: 1%; }
   #masthead img {
     display: inline-block;
     float: left; }
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 920px) {
     #masthead {
       text-align: center; }
       #masthead img, #masthead .logo {
@@ -114,6 +136,12 @@
 .main-navigation ul {
   display: inline-block;
   margin: 0 auto; }
+  .main-navigation ul li {
+    float: none;
+    display: inline-block; }
+  @media only screen and (max-width: 600px) {
+    .main-navigation ul {
+      display: none; } }
 
 .logo {
   display: inline-block;
@@ -130,6 +158,11 @@
 @media only screen and (min-width: 769px) {
   #header-nav {
     max-height: 60px; } }
+/*change line-height for submenu */
+#primary-menu .sub-menu li a {
+  line-height: 20px;
+  padding: 10px; }
+
 #primary-menu li a {
   text-transform: uppercase;
   color: #141414;
@@ -137,6 +170,8 @@
   line-height: 60px;
   -webkit-transition: all 0ms ease;
   transition: all 0ms ease; }
+  #primary-menu li a:hover {
+    color: #025490; }
   @media only screen and (max-width: 1000px) {
     #primary-menu li a {
       padding: 0 17px; } }
@@ -146,7 +181,8 @@
   @media only screen and (max-width: 601px) {
     #primary-menu li a {
       padding: 0 13px;
-      font-size: 0.625rem; } }
+      font-size: 0.625rem;
+      line-height: 4; } }
 
 .site-branding {
   display: inline-block; }
@@ -163,12 +199,22 @@
   top: 2.5em;
   background: #fff; }
 
+/* ======= MOBILE MENU STYLES ====== */
+.menu-toggle {
+  margin: 0 auto 3%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  background: rgba(191, 213, 237, 0.6); }
+
 /*==== SEARCH FORM TOGGLE ======*/
 .site-header .search-form {
-  position: absolute;
-  right: 23%;
-  top: 16%;
-  width: 10vw; }
+  float: right;
+  margin-top: 5px; }
+  @media only screen and (max-width: 920px) {
+    .site-header .search-form {
+      float: none;
+      text-align: center; } }
 
 .site-header .search-field {
   background-color: transparent;
@@ -379,19 +425,22 @@
   .home .entry-content .woocommerce.columns-2 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     /* smaller cubes */
     /* larger cubes */ }
     @media only screen and (max-width: 850px) {
       .home .entry-content .woocommerce.columns-2 ul li {
-        width: 100%; } }
+        width: 100%;
+        margin: 0 auto;
+        text-align: center; } }
     .home .entry-content .woocommerce.columns-2 ul li:nth-child(2), .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) {
-      width: 22%;
+      width: 22.5%;
       clear: right;
       margin-left: 1%; }
       @media only screen and (max-width: 850px) {
         .home .entry-content .woocommerce.columns-2 ul li:nth-child(2), .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) {
-          width: 100%; } }
+          width: 100%;
+          margin: 0 auto;
+          text-align: center; } }
       .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) a.woocommerce-LoopProduct-link, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) a.woocommerce-LoopProduct-link {
         background: none;
         background-position: 0% 0%; }
@@ -406,6 +455,9 @@
       .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) .section-container, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) .section-container {
         background: none;
         height: 60%; }
+        .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) .section-container h2, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) .section-container h2 {
+          color: white;
+          text-shadow: 0 1px 1px #000; }
         @media only screen and (max-width: 1050px) {
           .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) .section-container, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) .section-container {
             padding: 30px 10px 40px; }
@@ -423,14 +475,17 @@
             width: 100%;
             transition: all 300ms ease-in-out; }
             .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) .section-container h2, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) .section-container h2 {
-              font-size: 1.5rem; } }
+              font-size: 1.875rem;
+              color: initial; }
+              .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) .section-container h2:after, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) .section-container h2:after {
+                margin: 5px auto; } }
       .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) .button, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) .button {
         font-size: .9rem;
         line-height: 12px;
         padding: 6px 12px;
         border-radius: 4px;
         background: #464646;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(70, 70, 70, 0.7);
         text-shadow: 0 1px 1px #000;
         border: 1px solid #FFFFFF;
         box-shadow: 0px 1px 1px 0px rgba(20, 20, 20, 0.25);
@@ -438,6 +493,22 @@
         opacity: 1;
         left: 30%;
         top: 15rem; }
+        .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) .button:hover, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) .button:hover {
+          background: #2d2d2d; }
+        @media only screen and (max-width: 850px) {
+          .home .entry-content .woocommerce.columns-2 ul li:nth-child(2) .button, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3) .button {
+            position: relative;
+            background: #08107B;
+            padding: 16px 48px;
+            box-shadow: 0px 1px 0px 0px #000000;
+            color: white;
+            font-weight: 100;
+            top: -20px;
+            text-transform: uppercase;
+            opacity: 0;
+            -webkit-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+            left: 0; } }
       .home .entry-content .woocommerce.columns-2 ul li:nth-child(2):hover .section-container, .home .entry-content .woocommerce.columns-2 ul li:nth-child(3):hover .section-container {
         height: 60%; }
     .home .entry-content .woocommerce.columns-2 ul li {
@@ -481,6 +552,9 @@
           font-size: 1.875rem;
           font-family: 'Lato', sans-serif;
           font-weight: 400; }
+          @media only screen and (max-width: 850px) {
+            .home .entry-content .woocommerce.columns-2 ul li .section-container h2:after {
+              margin: 5px auto; } }
           .home .entry-content .woocommerce.columns-2 ul li .section-container h2:after {
             content: '';
             display: inline-block;
@@ -488,6 +562,10 @@
             height: 3px;
             background: #E9B226;
             display: block; }
+      @media only screen and (max-width: 950px) {
+        .home .entry-content .woocommerce.columns-2 ul li .woocommerce-product-details__short-description p {
+          line-height: 1.5;
+          font-size: 1.1rem; } }
       .home .entry-content .woocommerce.columns-2 ul li .button {
         position: relative;
         background: #08107B;
@@ -501,6 +579,11 @@
         opacity: 0;
         -webkit-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out; }
+        .home .entry-content .woocommerce.columns-2 ul li .button:hover {
+          background: #050a4b; }
+        @media only screen and (max-width: 850px) {
+          .home .entry-content .woocommerce.columns-2 ul li .button {
+            left: 0; } }
       .home .entry-content .woocommerce.columns-2 ul li:hover .button {
         opacity: 1; }
       .home .entry-content .woocommerce.columns-2 ul li:hover img {

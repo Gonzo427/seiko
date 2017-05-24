@@ -5,6 +5,21 @@
 .homepage-banner{
 	position: relative;
 
+	@media only screen and (max-width: 480px) {
+		background: grey;
+    	padding: 50px 0;
+
+    	iframe{
+    		display: none;
+    	}
+
+    	.banner-content-container{
+    		bottom: -20px;
+    	}
+	}
+
+	
+
 	.video-container {
 	    position: relative;
 	    padding-bottom: 37.5%;

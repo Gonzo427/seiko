@@ -31,16 +31,16 @@
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
 				if ( is_front_page() && is_home() ) : ?>
-					<!--<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>-->
-					       <img src="<?php echo get_template_directory_uri(); ?>/images/logo-usa.gif" alt="Seiko Logo" class="logo"/>
+					<!--<h1 class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?></a></h1>-->
+					      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <img src="<?php echo get_template_directory_uri(); ?>/images/logo-usa.gif" alt="Seiko Logo" class="logo"/></a>
 
 				<?php else : ?>
-					<!--<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>-->
-					<img src="<?php echo get_template_directory_uri(); ?>/images/logo-usa.gif" alt="Logo" class="logo"/>
+					<!--<p class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?></a></p>-->
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-usa.gif" alt="Logo" class="logo"/></a>	
 				<?php
 				endif;?>
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'seiko' ); ?></button>
-				<?php //get_search_form(); ?>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'seiko' ); ?></button>
+				<?php get_search_form(); ?>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 
 			</nav><!-- #site-navigation -->
