@@ -568,7 +568,7 @@
           font-size: 1.1rem; } }
       .home .entry-content .woocommerce.columns-2 ul li .button {
         position: relative;
-        background: #08107B;
+        background: #0066b3;
         padding: 16px 48px;
         box-shadow: 0px 1px 0px 0px #000000;
         color: white;
@@ -580,7 +580,7 @@
         -webkit-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out; }
         .home .entry-content .woocommerce.columns-2 ul li .button:hover {
-          background: #050a4b; }
+          background: #004980; }
         @media only screen and (max-width: 850px) {
           .home .entry-content .woocommerce.columns-2 ul li .button {
             left: 0; } }

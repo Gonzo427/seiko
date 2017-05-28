@@ -37,7 +37,7 @@ Tags:
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: Arial, sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -81,8 +81,11 @@ template {
 
 a {
 	background-color: transparent;
+	color: #0066b3;
 }
-
+a:visited{
+	color:midnightblue
+}
 a:active,
 a:hover {
 	outline: 0;
@@ -255,7 +258,7 @@ button,
 input,
 select,
 textarea {
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
 	color: #141414;
     font-size: 14px;
@@ -496,12 +499,9 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
 
 a:visited {
-	color: purple;
+	color: midnightblue;
 }
 
 a:hover,
