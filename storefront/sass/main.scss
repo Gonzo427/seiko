@@ -1,0 +1,15 @@
+/* main style sheet */
+$linkColor:#025490; /*blue*/
+$darkBlue:#0066b3 ; /*hover button color*/
+$darkGrey:#464646;
+$lightGrey:#E7E7EA;
+$gold:#E9B226;
+
+@import 'partials/grid';
+@import 'partials/footer';
+@import 'partials/video-container';
+@import 'partials/header-nav';
+@import 'partials/product-cubes';
+@import 'partials/woocommerce';
+
+

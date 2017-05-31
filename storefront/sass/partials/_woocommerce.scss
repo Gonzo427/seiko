@@ -1,0 +1,242 @@
+.home .entry-content {
+    padding: 0 20px;
+
+    
+    .woocommerce.columns-2{
+    	ul{
+    		display: flex;
+		    flex-wrap: wrap;
+		    
+		    @media only screen and (max-width: 850px) {
+		    	li{
+		    		width: 100%;
+		    		margin: 0 auto;
+    				text-align: center;
+		    	}
+		    }
+
+		    /* smaller cubes */
+    		li:nth-child(2),li:nth-child(3){
+    			width: 22.5% !important;
+    			clear: right;
+    			margin-left:1%;
+
+    			@media only screen and (max-width: 850px) {
+    				width: 100% !important;
+    				margin: 0 auto;
+    				text-align: center;
+    			}
+
+    			a.woocommerce-LoopProduct-link{
+    				background: none;
+    				background-position: 0% 0%;
+    				
+	    			@media only screen and (max-width: 850px) {
+	    				background: linear-gradient(rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0) 0%);
+	    				background-position: 0% -900%;
+	    				background-size: 100% 90%;
+	    				background-repeat: no-repeat;
+
+	    				&:hover{
+		    				background-position: 0% 0%;
+		    			}
+	    			}
+	    			
+    			}
+    			.section-container{
+    				background:none;
+    				height: 60%;
+    				h2{
+    					color: white;
+    					text-shadow: 0 1px 1px #000;
+    				}
+    				@media only screen and (max-width: 1050px) {
+    					padding: 30px 10px 40px;
+    						p{
+    							font-size: 1.1rem;
+    							line-height: 1.5;
+    						}
+    				}
+    				@media only screen and (max-width: 850px) {
+    					height: auto;
+			    		padding: 30px 30px 40px;
+			    			background: rgba(255,255,255,.9);
+			    			position: absolute;
+		    				bottom: 0;
+		    				height: 40%;
+		    				width: 100%;
+		    				transition: all 300ms ease-in-out;
+
+		    				h2{
+		    					font-size: 1.875rem;
+		    					color: initial;
+
+		    					&:after{
+		    						margin: 5px auto;
+		    					}
+		    				}
+    				}
+    			}
+    			.button{
+	    				font-size: .9rem;
+					    line-height: 12px;
+					    padding: 6px 12px;
+					    border-radius: 4px;
+					    background: $darkGrey;
+					    background: rgba($darkGrey, .7);
+					    text-shadow: 0 1px 1px #000;
+					    border: 1px solid #FFFFFF;
+					    box-shadow: 0px 1px 1px 0px rgba(20, 20, 20, 0.25);
+					    text-transform: uppercase;
+					    opacity: 1;
+					    left: 0%;
+    					top: 5rem;
+
+    					&:hover{
+    						background: darken($darkGrey, 10%);
+    					}
+
+    					@media only screen and (max-width: 850px) {
+    						position: relative;
+			    			background: #08107B;
+						    padding: 16px 48px;
+						    box-shadow: 0px 1px 0px 0px #000000;
+						    color: white;
+						    font-weight: 100;
+						    top: -20px;
+						    text-transform: uppercase;
+						    opacity: 0;
+						    -webkit-transition: all 300ms ease-in-out;
+						    transition: all 300ms ease-in-out;
+    						left: 0;
+    					}
+					    
+	    			}
+	    		&:hover{
+	    			.section-container{
+	    				height: 60%;
+	    			}
+	    			
+	    		}
+
+    		}
+    		/* larger cubes */
+    		li{
+	    		border: 1px solid #CFCFD5;
+	    		background-repeat: no-repeat;
+	    		background-size: 100% 100%;
+	    		transition: all 300ms ease-in-out;
+	    		margin-right: 1%;
+
+	    		a.woocommerce-LoopProduct-link{
+	    			position: relative;
+				    display: block;
+				  	background: linear-gradient( rgba(255,255,255,.9) 66.75%, rgba(255,255,255,0) 0%);
+				  	background-size: 100% 90%;
+					background-position: 0% -600%;
+					background-repeat: no-repeat;
+					transition: all 300ms ease-in-out;
+
+					&:hover{
+						background-position: 0% -89%;
+					}
+				}
+
+
+    			&:hover{
+    			/*background-image: linear-gradient(rgba(255, 255, 255, 0.6) 100%, transparent 0%);*/
+		    		background-repeat: no-repeat;
+		    		background-size: 100% 100%;
+		    		overflow: hidden;
+    			}
+
+	    		a{
+	    			img{
+	    				position: relative;
+	    				z-index: -1;
+	    				transition: all 300ms ease-in-out;
+	    			}
+	    		}
+	    		.section-container{
+	    			padding: 30px 30px 40px;
+	    			background: rgba(255,255,255,.9);
+	    			position: absolute;
+    				bottom: 0;
+    				height: 40%;
+    				width: 100%;
+    				transition: all 300ms ease-in-out;
+
+    				
+
+		    		h2{
+				    	position: relative;
+					    text-transform: uppercase;
+					    width: 100%;
+					    left: 2%;
+					    font-size: 1.875rem;
+					    font-family: 'Lato', sans-serif;
+					    font-weight: 400;
+					    @media only screen and (max-width: 850px) {
+							&:after{
+			    				margin: 5px auto;
+			    			}
+						}  
+
+					    &:after{
+					    	content: '';
+						    max-width: 172px;
+						    height: 3px;
+						    background: $gold;
+						    display: block;
+						    margin: 10px auto;
+							  
+   
+					    }
+				    }
+				   
+				    }
+				    .woocommerce-product-details__short-description{
+						@media only screen and (max-width: 950px) {
+	    					p{line-height: 1.5;font-size: 1.1rem;}
+	    				}
+				    	  
+				}
+			    .button{
+			    	position: relative;
+	    			background: $darkBlue;
+				    padding: 16px 48px;
+				    box-shadow: 0px 1px 0px 0px #000000;
+				    color: white;
+				    font-weight: 100;
+				    left: 5%;
+				    top: -20px;
+				    text-transform: uppercase;
+				    opacity: 0;
+				    -webkit-transition: all 300ms ease-in-out;
+				    transition: all 300ms ease-in-out;
+
+				    &:hover{
+				    	background: darken($darkBlue, 10%);
+				    }
+
+				    @media only screen and (max-width: 850px) {
+    						left: 0;
+    				}
+			    }
+			    &:hover .button{
+			    	opacity: 1;
+
+				}
+				&:hover img{
+					transform: scale(1.025);
+				}
+				&:hover .section-container{
+    					height: 49.125%;
+    			}
+	    	}
+	    }
+
+
+    }
+   
+}

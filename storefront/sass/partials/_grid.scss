@@ -1,0 +1,12 @@
+.page-template-template-homepage .entry-content, .page-template-template-homepage .entry-header{
+		max-width: 70em !important;
+	}
+@media (min-width: 768px){
+	.col-full{
+	max-width: 70em;
+	padding: 0;
+	}
+	.page-template-template-homepage .entry-content, .page-template-template-homepage .entry-header{
+		max-width: 70em;
+	}
+}
