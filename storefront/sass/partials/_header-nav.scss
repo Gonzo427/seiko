@@ -4,8 +4,7 @@
 	padding: 1%;
 
 	img{
-		display: inline-block;
-		float: left;
+		
 	}
 	@media only screen and (max-width: 920px){
 		text-align: center;
@@ -34,9 +33,7 @@
     display: inline-block;
     float: left;
     line-height: 60px;
-    z-index: 5;
-    position: relative;
-    padding: 10px;
+    padding: 10px 25px 0 0;
 }
 
 #header-nav {

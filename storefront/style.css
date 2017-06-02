@@ -7,13 +7,22 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+
 .site-header {
 background: transparent;
 }
+.main-navigation a {
+    padding: 0;
+}
+.main-navigation ul.menu, .main-navigation ul.nav-menu{
+	display: inline-block;
+}
+.col-full{
+	max-width: 70em;
+}
 .page-template-template-homepage .entry-content, .page-template-template-homepage .entry-header{
 		max-width: 70em;
-	}
-
+}
 .home .site-main .columns-2 ul.products li.product{
 	width: 48%;
     margin-right: 1%;
@@ -23,6 +32,9 @@ background: transparent;
 }
 .woocommerce-active .site-header .main-navigation{
 	width: 100%;
+}
+.woocommerce-tabs .panel h2:first-of-type{
+	display: none;
 }
 /*!
 Theme Name:   	Storefront

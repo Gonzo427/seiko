@@ -25,36 +25,36 @@
 
 
 
-<!--	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 		
       		
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
-				//if ( is_front_page() && is_home() ) : ?>
+				if ( is_front_page() && is_home() ) : ?>
 					
-					      <a href="<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home"> <img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/logo-usa.gif" alt="Seiko Logo" class="logo"/></a>
+					      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-usa.gif" alt="Seiko Logo" class="logo"/></a>
 
-				<?php //else : ?>
+				<?php else : ?>
 					
-					<a href="<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php //echo get_stylesheet_directory_uri(); ?>/images/logo-usa.gif" alt="Logo" class="logo"/></a>	
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-usa.gif" alt="Logo" class="logo"/></a>	
 				<?php
-				//endif;?>
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Menu', 'seiko' ); ?></button>
+				endif;?>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'seiko' ); ?></button>
 				<?php get_search_form(); ?>
-				<?php //wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 
 			</nav>
 			
 		
      
-	</header>-->
+	</header>
 	
 
 
 
 
-	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
+	<!--<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 		<div class="col-full">
 
 			<?php
@@ -71,10 +71,10 @@
 			 * @hooked storefront_header_cart                      - 60
 			 * @hooked storefront_primary_navigation_wrapper_close - 68
 			 */
-			do_action( 'storefront_header' ); ?>
+			//do_action( 'storefront_header' ); ?>
 
 		</div>
-	</header>
+	</header>-->
 	<!-- #masthead -->
 
 	<?php

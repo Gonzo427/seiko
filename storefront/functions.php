@@ -40,3 +40,6 @@ function remove_homepage_content(){
 	remove_action('storefront_header', 'storefront_header_cart', 60);
 }
 add_action('init', 'remove_homepage_content');
+
+// remove short description from single product pages
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );		
