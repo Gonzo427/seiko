@@ -23,11 +23,20 @@
 	<?php
 	do_action( 'storefront_before_header' ); ?>
 
+<?php 
+	$divider = '<span class="nav-divider"> | </span>';
+	wp_nav_menu( 
+		array( 
+			'theme_location' => 'top-menu', 
+			'menu_id' => 'top-menu', 
+			'link_after'      => $divider
+			) ); 
+?>
 
-
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header col-full" role="banner">
 		
       		
+	
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
@@ -42,7 +51,7 @@
 				endif;?>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'seiko' ); ?></button>
 				<?php get_search_form(); ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu', 'link_after'      => $divider ) ); ?>
 
 			</nav>
 			

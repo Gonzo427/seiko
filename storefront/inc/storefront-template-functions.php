@@ -849,7 +849,23 @@ if ( ! function_exists( 'storefront_homepage_content' ) ) {
 
 			get_template_part( 'content', 'homepage' );
 
+//remove ADD TO CART buttons on home page 
+			/*function remove_loop_button(){
+				
+				remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+				}
+				add_action('init', 'remove_loop_button');
+
+				add_action('woocommerce_after_shop_loop_item','replace_add_to_cart');
+				function replace_add_to_cart() {
+				global $product;
+				$link = $product->get_permalink();
+				echo '<a rel="nofollow" href="' . esc_attr($link) . ' " class="button">Read more</a>';
+				
+			}*/
+
 		} // end of the loop.
+		
 	}
 }
 

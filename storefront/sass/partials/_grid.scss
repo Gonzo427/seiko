@@ -1,6 +1,12 @@
 .page-template-template-homepage .entry-content, .page-template-template-homepage .entry-header{
 		max-width: 70em !important;
 	}
+
+.boxy {
+    padding: 10px 11px;
+    border: solid 1px #ccc;
+    margin-bottom: 12px;
+}
 @media (min-width: 768px){
 	.col-full{
 	max-width: 70em;

@@ -7,35 +7,194 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+/* GLOBAL */
+body,html{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Arial, sans-serif;
+	background: -moz-linear-gradient(270deg, #d8d8d8 0%, #000000 100%); /* ff3.6+ */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d8d8d8), color-stop(100%, #000000)); /* safari4+,chrome */
+background-image: -webkit-linear-gradient(270deg, #d8d8d8 0%, #000000 100%); /* safari5.1+,chrome10+ */
+background-image: -o-linear-gradient(270deg, #d8d8d8 0%, #000000 100%); /* opera 11.10+ */
+background-image: -ms-linear-gradient(270deg, #d8d8d8 0%, #000000 100%); /* ie10+ */
+background-image: linear-gradient(180deg, #d8d8d8 0%, #000000 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+    background-size: 100% 800%;
+    background-repeat: no-repeat;
+}
+h1{
+	letter-spacing: 0;
+}
+.home #page{
+	min-height:100%;
+   position:relative;
+   /*max-width: 100%;*/
+}
+#page{
+		min-height:100%;
+   position:relative;
+	max-width: 70em;
+    margin: 0 auto;
+    background: white;
+}
+.col-full{
+	max-width: 70em;
+}
+a{
+	color:#0066b3;
+}
+.site-content{
+	padding-top: 20px;
 
+}
+.hentry.type-page .entry-header h1{
+	display: block;
+	padding: 6px 16px;
+    text-transform: uppercase;
+    color: #0066b3;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background: #c8c8c8;
+}
+.home h1.entry-title{
+	display: none;
+}
+
+/* ======= HEADER AND NAV ===== */
 .site-header {
 background: transparent;
 }
 .main-navigation a {
     padding: 0;
 }
-.main-navigation ul.menu, .main-navigation ul.nav-menu{
+
+.home .main-navigation ul.menu, .main-navigation ul.nav-menu{
 	display: inline-block;
 }
-.col-full{
-	max-width: 70em;
+.main-navigation ul.menu, .main-navigation ul.nav-menu{
+	display: block;
+	position: relative;	
+	z-index: 1;
 }
-.page-template-template-homepage .entry-content, .page-template-template-homepage .entry-header{
-		max-width: 70em;
-}
-.home .site-main .columns-2 ul.products li.product{
-	width: 48%;
-    margin-right: 1%;
-}
-.hentry.type-page .entry-header{
-	display: none;
-}
+
 .woocommerce-active .site-header .main-navigation{
 	width: 100%;
 }
 .woocommerce-tabs .panel h2:first-of-type{
 	display: none;
 }
+.storefront-sorting{
+	display: none;
+}
+
+#site-navigation:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, hsla(0, 0%, 0%, 0)), color-stop(50%, hsla(0, 0%, 0%, .75)), color-stop(100%, hsla(0, 0%, 0%, 0)));
+    background: -webkit-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+    background: -moz-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+    background: -ms-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+    background: -o-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .75) 50%, hsla(0, 0%, 0%, 0) 100%);
+    background: linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, .5) 50%, hsla(0, 0%, 0%, 0) 100%);
+}
+/*=== HOME PAGE ==*/
+.home #site-navigation:after{
+	display:none !important;
+}
+.home .site-main .columns-2 ul.products li.product {
+    margin-right: 1% !important;
+    width: 48%;
+    margin-right: 1%;
+}
+.home .price{
+	display: none !important;
+}
+.page-template-template-homepage .entry-content, .page-template-template-homepage .entry-header{
+		max-width: 70em;
+}
+
+.page-template-template-homepage .type-page{
+	padding-bottom: 0;
+}
+.hentry{
+	margin-bottom:2.5em;
+}
+
+/*=== FOOTER ===*/
+.site-footer {
+    background-color: #084c7f;
+    padding: 0;
+    font-size:10px;
+    position:absolute;
+   bottom:0;
+   width:100%;
+   height:45px; 
+}
+.site-footer .textwidget, .site-footer a:not(.button){
+     color: #b4cfe4;	
+    }
+.footer-widgets {
+    width: 100%;
+    padding-top: 1.5em;
+}
+.footer-widgets.col-4 .block{
+	width: 50%;
+}
+.site-footer .widget{
+	margin:0;
+}
+
+/* ===== WIDGET STYLES ===== */
+.widget_nav_menu ul li{
+	display: inline-block;
+}
+.widget_nav_menu ul li:before{
+	display: none;
+}
+
+/*  ARCHIVE STYLES  */
+.archive .quantity {
+    position: absolute;
+    left: 20px;
+}
+.woocommerce-breadcrumb{
+	display:none;
+}
+
+
+
+/* ===== MEDIA QUERIES ==== */
+@media (min-width:768px){
+	.single-product div.product .woocommerce-tabs{
+		clear: none;
+	        width: 55%;
+    	float: right;
+	}
+	.single-product div.product .woocommerce-product-gallery{
+		width: 38%;
+	}
+	/*.woocommerce-tabs ul.tabs{
+		display: none;
+	}*/
+	.woocommerce-tabs .panel{
+		width: 100%;
+	}
+	
+}
+@media (max-width:768px){
+	.home .site-main .columns-2 ul.products li.product{
+		width: 100%;
+	}
+}
+
 /*!
 Theme Name:   	Storefront
 Theme URI:    	https://woocommerce.com/storefront

@@ -1,7 +1,29 @@
-/*======== HOME PAGE  ===========*/
+.menu-top-nav-container{
+	background: #dcdcdc;
+    text-align: right;
+}
+.home .menu-top-nav-container{
+display: none;
+	}
+#top-menu li {
+    display: inline;
+
+    a{
+    	font-size: 12px;
+    	padding: 0 5px;
+
+    	.nav-divider{
+    		position: relative;
+    		margin-left: 10px;
+    	}
+    }
+
+}
+
+
 
 #masthead{
-	padding: 1%;
+	padding-top: 20px;
 
 	img{
 		
@@ -15,7 +37,12 @@
 	}
 
 }
-
+.main-navigation ul.menu ul.sub-menu{
+ 	.nav-divider {
+ 		display: none;
+ 	}
+ }
+.main-navigation ul.menu ul.sub-menu{}
 .main-navigation ul{
 	display: inline-block;
 	margin: 0 auto;
@@ -23,6 +50,22 @@
 	li{
 		float: none;
     	display: inline-block;
+
+		.nav-divider {
+		    position: absolute;
+		    right: 0;
+
+
+		    @media only screen and (max-width: 768px){
+		    	display: none;
+		    }
+		}
+
+		&:last-of-type{
+			.nav-divider{
+				display: none;
+			}
+		}	
 	}
 
 	@media only screen and (max-width: 600px){
@@ -59,9 +102,11 @@
 		line-height: 60px;
 	    -webkit-transition: all 0ms ease;
 		transition: all 0ms ease;
+		font-size: .8em;
 	&:hover{
 		color: $linkColor;
 	}
+
     	
     	@media only screen and (max-width: 1000px)
 		{
@@ -114,7 +159,15 @@
 /*==== SEARCH FORM TOGGLE ======*/
 .site-header .search-form {
 	float: right;
-	margin-top: 5px;
+	background: $darkBlue;
+	padding: 10px;
+	input[type=submit]{
+		background: #d4d4d4;
+	    color: #222;
+	    padding: 0px 5px;
+	    width: 33px;  
+	}
+	  
 
 	@media only screen and (max-width: 920px){
 		float: none;
@@ -127,35 +180,90 @@
 		}
 }
 
-.site-header .search-field {
-	background-color: transparent;
-	background-image: url(../images/search-icon.png);
-	background-position: 5px center;
-	background-repeat: no-repeat;
-	background-size: 24px 24px;
-	border: none;
-	cursor: pointer;
-	height: 37px;
-	margin: 3px 0;
-	padding: 0 0 0 34px;
-	position: relative;
-	-webkit-transition: width 400ms ease, background 400ms ease;
-	transition:         width 400ms ease, background 400ms ease;
-	font: normal normal normal 1em/1 FontAwesome;
-	width: 0;
-
-	&:before{
-		content: "\f002";
+.home .site-header {
+	.search-form{
+		background: transparent;
 	}
+	.search-submit{
+		display: none;
+	}
+	.search-field {
+		background-color: transparent;
+		background-image: url(../images/search-icon.png);
+		background-position: 5px center;
+		background-repeat: no-repeat;
+		background-size: 24px 24px;
+		border: none;
+		cursor: pointer;
+		height: 37px;
+		margin: 3px 0;
+		padding: 0 0 0 34px;
+		position: relative;
+		-webkit-transition: width 400ms ease, background 400ms ease;
+		transition:         width 400ms ease, background 400ms ease;
+		font: normal normal normal 1em/1 FontAwesome;
+		width: 0;
+
+		&:before{
+			content: "\f002";
+		}
+	}	
 }
-.site-header .search-field:focus {
+
+
+.home .site-header .search-field:focus {
 	background-color: #fff;
 	border: 2px solid #c3c0ab;
 	cursor: text;
 	outline: 0;
-	width: 230px;
+	width: 115px;
+    font-size: .8em;
+    margin-right: -20px
 }
 .search-form
 .search-submit { 
-	display:none;
+	//display:none;
 }
+
+/* ====== NOT HOME STYLES ======= */
+
+body:not(.home){
+	#primary-menu li a{
+		text-transform: none;
+
+	
+	}
+	#primary-menu li.menu-item-home{
+		display: none;
+	}
+
+	.main-navigation ul.menu > li.menu-item-has-children > a:after, .main-navigation ul.menu > li.page_item_has_children > a:after, .main-navigation ul.nav-menu > li.menu-item-has-children > a:after, .main-navigation ul.nav-menu > li.page_item_has_children > a:after{
+		display: none;
+	}
+
+}
+.site-header .search-field {
+	background-color: #fff;
+	background-image: none;
+	cursor: pointer;
+	height: auto;
+	padding: 3px 0px 3px 15px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition:         width 400ms ease, background 400ms ease;
+	font-size: .9em;
+	width: auto;
+	text-transform: uppercase;
+
+	&:before{
+		content: "";
+	}
+}
+.site-header .search-field:focus {
+	background-color: #fff;
+	border: inherit;
+	cursor: text;
+	outline: 0;
+	width: auto;
+}
+

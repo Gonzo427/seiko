@@ -122,16 +122,14 @@
       pointer-events: none; }
 
 /*======== HOME PAGE  ===========*/
-#masthead {
-  padding: 1%; }
-  #masthead img {
-    display: inline-block;
-    float: left; }
-  @media only screen and (max-width: 920px) {
-    #masthead {
-      text-align: center; }
-      #masthead img, #masthead .logo {
-        float: none; } }
+#masthead img {
+  display: inline-block;
+  float: left; }
+@media only screen and (max-width: 920px) {
+  #masthead {
+    text-align: center; }
+    #masthead img, #masthead .logo {
+      float: none; } }
 
 .main-navigation ul {
   display: inline-block;
